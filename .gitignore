@@ -1,0 +1,29 @@
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Archivos de datos pesados (NUNCA deben subirse a Git)
+*.xlsx
+*.xls
+*.parquet
+*.csv
+online_retail_II.xlsx
+data_raw_consolidated.parquet
+
+# Caché de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Variables de entorno y credenciales (para conexión a BD)
+.env
+
+# Archivos de logs
+*.log
+
+# IDEs y SO
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
