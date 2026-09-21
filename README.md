@@ -59,7 +59,8 @@ online-retail-analytics/
 │       ├── 01_resumen_ejecutivo.png
 │       └── 02_customer_analytics_rfm.png
 ├── power_bi/
-│   └── README.md             # Directorio para alojar el archivo de Power BI (.pbix)
+│   ├── README.md             # Directorio para alojar el archivo de Power BI (.pbix)
+│   └── dax_measures.md       # Diccionario de medidas DAX y capa semantica
 └── sql/
     ├── 01_constraints_and_indexes.sql  # Definición de llaves primarias, foráneas e índices
     ├── 02_rfm_segmentation.sql         # Segmentación de clientes mediante modelo RFM
@@ -103,6 +104,8 @@ El script `sql/01_constraints_and_indexes.sql` aplica restricciones de integrida
   Determina el mes de ingreso de cada cliente y calcula el porcentaje de retorno en los periodos posteriores. Se estructura en la vista `vw_retencion_cohortes` y genera la matriz triangular clásica de seguimiento de retención.
 
 ### Fase 4: Reporte Ejecutivo en Power BI
+
+Las formulas analiticas de la capa semantica se encuentran documentadas en el [Diccionario de Medidas DAX](power_bi/dax_measures.md).
 
 El informe visual consta de dos páginas diseñadas para diferentes niveles de decisión:
 
